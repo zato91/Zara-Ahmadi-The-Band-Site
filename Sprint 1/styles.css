@@ -1,0 +1,162 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+}
+
+.nav {
+  background-color: #323232;
+  height: 80px;
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__title {
+  padding-left: 180px;
+}
+
+.nav__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.nav__menu ul li {
+  padding-left: 56px;
+  font-size: 20px;
+  list-style-type: none;
+  color: white;
+}
+
+.nav__menu ul li:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.hero {
+  height: 670px;
+  background-size: cover;
+  background-repeat: round;
+}
+
+.hero img {
+  height: 670px;
+}
+
+.hero__cover {
+  padding-left: 180px;
+  padding-top: 3em;
+  font-size: 3em;
+}
+
+.about {
+  padding-left: 180px;
+  width: 896px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.about__img {
+  width: 100%;
+  height: 450px;
+  padding-bottom: 48px;
+}
+
+.about__p1 {
+  padding-bottom: 40px;
+}
+
+.about__p2 {
+  padding-bottom: 56px;
+}
+
+.about h3 {
+  padding-bottom: 32px;
+  font-style: bold;
+}
+
+.about__nujabes1, .about__nujabes2 {
+  width: 420px;
+  padding-bottom: 48px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 47%;
+          flex: 0 0 47%;
+}
+
+.about__nujabes1 {
+  margin-right: 40px;
+}
+
+.musician {
+  padding: 48px 0 48px 180px;
+}
+
+.picture_title {
+  padding: 48px 0 64px 180px;
+}
+
+.container-galery {
+  padding-bottom: 40px;
+}
+
+.galery {
+  height: 627px;
+  width: 1080px;
+  margin-left: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.galery__pic {
+  width: 344px;
+  height: 193px;
+  background-repeat: round;
+}
+
+.galery__pic--middle {
+  margin: 0 24px;
+}
+
+footer {
+  height: 100%;
+}
+
+.contact {
+  padding-left: 180px;
+}
+
+@media (max-width: 481px) {
+  .nav__menu {
+    width: 100%;
+  }
+  .nav__menu ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 6px;
+  }
+  .nav__menu ul li {
+    padding: 10px 0px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
