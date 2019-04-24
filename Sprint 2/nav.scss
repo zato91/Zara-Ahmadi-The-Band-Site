@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@mixin padding180 {
+    padding-left: 180px;
+}
+
+h1{
+    color: white;
+}
+.nav{
+    background-color: rgb(50, 50, 50);
+    height: 80px;
+    font-family: sans-serif;
+
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+
+    &__title{
+        @include padding180;
+    
+    }
+    
+}
+
+.nav__menu ul{
+    display: flex;
+    justify-content: flex-start;
+    li {
+        padding-left: 56px;
+        font-size: 20px;
+        list-style-type: none;
+        color: white; 
+    }
+    li:hover{
+            color: white;
+            border-bottom: 2px solid white;
+        }
+    
+}
+
+@media  (max-width: 481px){
+    
+    .nav {
+        &__menu{
+        width: 100%;
+        }
+
+        &__menu ul{
+            justify-content: space-around;
+            padding-top: 6px;
+        }
+
+        &__menu ul li{
+        
+            padding: 10px 0px;
+        }   
+    }
+ }

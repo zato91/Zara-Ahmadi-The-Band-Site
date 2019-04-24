@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@mixin padding180 {
+    padding-left: 180px;
+}
+
+footer {
+    height: 130%;
+    color: white;
+}
+.contact {
+    @include padding180();
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 48px;
+    &__card {
+        padding-right: 40px;
+    }
+    &__card:last-of-type {
+        width: 50%;
+    }
+    i {
+        padding-bottom: 56px;
+        padding-right: 32px;
+    }
+    h4 {
+        padding-bottom: 56px;
+    }
+    h5 {
+        padding-bottom: 56px;
+        width: 100%;
+        text-align: right
+
+    }
+    p{
+        padding-bottom: 24px;
+    }
+    
+   
+}
+
+
+
+footer>p {
+    @include padding180();
+    padding-top: 16px;
+}

@@ -1,0 +1,55 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer {
+  height: 130%;
+  color: white;
+}
+
+.contact {
+  padding-left: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 48px;
+}
+
+.contact__card {
+  padding-right: 40px;
+}
+
+.contact__card:last-of-type {
+  width: 50%;
+}
+
+.contact i {
+  padding-bottom: 56px;
+  padding-right: 32px;
+}
+
+.contact h4 {
+  padding-bottom: 56px;
+}
+
+.contact h5 {
+  padding-bottom: 56px;
+  width: 100%;
+  text-align: right;
+}
+
+.contact p {
+  padding-bottom: 24px;
+}
+
+footer > p {
+  padding-left: 180px;
+  padding-top: 16px;
+}
+/*# sourceMappingURL=footer.css.map */
