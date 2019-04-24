@@ -5,7 +5,7 @@ let myComment = [
 
 
 
-myComment.forEach( i => {
+function displayComment () {myComment.forEach( i => {
 
     let fo = document.getElementById('Comments');
 
@@ -26,8 +26,9 @@ myComment.forEach( i => {
    
 
 });
+};
 
-
+displayComment();
 
 
 
@@ -38,23 +39,6 @@ document.querySelector('.myform').addEventListener("submit", e => {
     let userC = (e.target.comment.value);
 
  myComment.unshift({username:userN,comment:userC});
-     
+ document.getElementById('Comments').innerHTML = "";
+ displayComment();
 });
-
-// function displayComment(e) {
-
-//     e.preventDefault();
-//     let userN = (e.target.username.value);
-//     let userC = (e.target.comment.value);
-//     let myNewComment = {
-//         username:userN,
-//         comment:userC,
-
-//     };
-//     myComment.unshift(myNewComment);
-//     };
-    
-    
-//     document.querySelector('.myform').addEventListener("submit",displayComment);
-
-//     console.log(userN);
