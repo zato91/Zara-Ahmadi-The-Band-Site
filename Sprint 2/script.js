@@ -28,30 +28,33 @@ myComment.forEach( i => {
 });
 
 
+
+
+
 let myNewComment = {};
 document.querySelector('.myform').addEventListener("submit", e => {
     e.preventDefault();
     let userN = (e.target.username.value);
     let userC = (e.target.comment.value);
 
-    myComment.unshift({username:userN,comment:userC});
-    // let newDi = document.querySelector(".i_do");
-    // // let x = newDi.document.createElement("p").innerHTML("userN");   // let x = i_do.appendChild(newDi);
+ myComment.unshift({username:userN,comment:userC});
      
 });
 
-// function displayComment(e){
+// function displayComment(e) {
+
 //     e.preventDefault();
-// }
+//     let userN = (e.target.username.value);
+//     let userC = (e.target.comment.value);
+//     let myNewComment = {
+//         username:userN,
+//         comment:userC,
 
-// .createElement className .appendChild innerText
-// var hoo = document.getElementById("i_do");
-// var x = hoo.document.createElement("p").innerHTML("userN");
-// x.innerHTML = "";
+//     };
+//     myComment.unshift(myNewComment);
+//     };
+    
+    
+//     document.querySelector('.myform').addEventListener("submit",displayComment);
 
-// i_do.appendChild(newDi);
-
-// variable.array.forEach(element => {
-//     element.innerHTML = "";
-// });
-// document.querySelector(".class").appendChild("myvariable")
+//     console.log(userN);

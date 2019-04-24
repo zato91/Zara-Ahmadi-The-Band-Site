@@ -7,40 +7,7 @@
 @mixin padding180 {
     padding-left: 180px;
 }
-// h1{
-//     color: white;
-// }
-// .nav{
-//     background-color: rgb(50, 50, 50);
-//     height: 80px;
-//     font-family: sans-serif;
 
-//     display: flex;
-//     flex-wrap:wrap;
-//     align-items: center;
-
-//     &__title{
-//         @include padding180;
-    
-//     }
-    
-// }
-
-// .nav__menu ul{
-//     display: flex;
-//     justify-content: flex-start;
-//     li {
-//         padding-left: 56px;
-//         font-size: 20px;
-//         list-style-type: none;
-//         color: white; 
-//     }
-//     li:hover{
-//             color: white;
-//             border-bottom: 2px solid white;
-//         }
-    
-// }
 
 .hero {
     height: 670px;
@@ -191,50 +158,15 @@
     margin-bottom: 40px;
     padding-top: 24px;
 }
-// footer {
-//     height: 130%;
-//     color: white;
-// }
-// .contact {
-//     @include padding180();
-//     display: flex;
-//     justify-content: flex-start;
-//     padding-top: 48px;
-//     &__card {
-//         padding-right: 40px;
-//     }
-//     &__card:last-of-type {
-//         width: 50%;
-//     }
-//     i {
-//         padding-bottom: 56px;
-//         padding-right: 32px;
-//     }
-//     h4 {
-//         padding-bottom: 56px;
-//     }
-//     h5 {
-//         padding-bottom: 56px;
-//         width: 100%;
-//         text-align: right
+.tickets {
+    display: flex;
+    flex-flow: wrap;
+    width: 804px;
+    &__d {
+        flex: 0 0 25%;
+    }
+};
 
-//     }
-//     p{
-//         padding-bottom: 24px;
-//     }
-    
-   
-// }
-
-
-
-// footer>p {
-//     @include padding180();
-//     padding-top: 16px;
-// }
-// .contact_card {
-//     @include padding180();
-// }
 // --------------------------@media-query-----------------------------
 @media  (max-width: 481px){
     
