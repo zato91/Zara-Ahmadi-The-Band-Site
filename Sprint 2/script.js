@@ -9,6 +9,11 @@ function displayComment () {myComment.forEach( i => {
 
     let fo = document.getElementById('Comments');
 
+    // let imageSection = document.createElement('img');
+    // imageSection.classList.add('Comments__image');
+    // imageSection.innerText = i.image;
+    // fo.appendChild(imageSection);
+
     let h3 = document.createElement('h3');
     h3.classList.add('Comments__name');
     h3.innerText = i.username;
@@ -23,7 +28,8 @@ function displayComment () {myComment.forEach( i => {
     commentSection.classList.add('Comments__text');
     commentSection.innerText = i.comment;
     fo.appendChild(commentSection);
-   
+    
+    
 
 });
 };
@@ -33,12 +39,22 @@ displayComment();
 
 
 let myNewComment = {};
+
 document.querySelector('.myform').addEventListener("submit", e => {
     e.preventDefault();
     let userN = (e.target.username.value);
     let userC = (e.target.comment.value);
+    // let userI = (e.target.image.value);
 
- myComment.unshift({username:userN,comment:userC});
- document.getElementById('Comments').innerHTML = "";
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+
+document.getElementById('Comments').innerHTML = "";
+ myComment.unshift({username:userN,date:today,comment:userC});
+ 
  displayComment();
 });
