@@ -214,6 +214,44 @@
     padding-top: 12%;
     font-size: 1.5em;
   }
+  .heroshow {
+    height: 472px;
+    background-size: cover;
+    background-repeat: round;
+  }
+  .heroshow img {
+    height: 100%;
+  }
+  .heroshow__cover {
+    padding-left: 16px;
+    padding-top: 64px;
+    font-size: 1.5em;
+    color: white;
+  }
+  .shows__event {
+    padding-left: 16px;
+  }
+  .card__soundCloud {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    padding-left: 16px;
+    padding-top: 20px;
+  }
+  .card__soundCloud__player {
+    padding-left: 0px;
+    width: 288px;
+  }
+  .card__soundCloud__title {
+    font-size: 3em;
+    color: white;
+    padding-bottom: 64px;
+  }
+  .hero__cover__shows {
+    font-size: 1.5em;
+  }
   .musician {
     padding: 32px 0 14px 16px;
   }
@@ -378,6 +416,43 @@
     font-size: 2.5em;
     padding-top: 19%;
   }
+  .heroshow {
+    height: 670px;
+    background-size: cover;
+    background-repeat: round;
+  }
+  .heroshow img {
+    height: 100%;
+  }
+  .heroshow__cover {
+    padding-left: 24px;
+    padding-top: 96px;
+    font-size: 1.5em;
+    color: white;
+  }
+  .shows__event {
+    padding-left: 16px;
+  }
+  .card__soundCloud {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    padding-left: 16px;
+    padding-top: 20px;
+  }
+  .card__soundCloud__player {
+    padding-left: 24px;
+  }
+  .card__soundCloud__title {
+    font-size: 3em;
+    color: white;
+    padding-bottom: 64px;
+  }
+  .hero__cover__shows {
+    font-size: 1.5em;
+  }
   .about {
     margin: 0 auto;
     width: 100%;
@@ -426,7 +501,7 @@
   }
   .galery {
     height: 627px;
-    width: 100%;
+    width: 720px;
     margin-left: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
