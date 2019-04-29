@@ -40,15 +40,20 @@
 
 .about__p1 {
   padding-bottom: 40px;
+  width: 100%;
+  font-weight: bold;
 }
 
 .about__p2 {
   padding-bottom: 56px;
+  width: 100%;
+  font-weight: bold;
 }
 
 .about h3 {
   padding-bottom: 32px;
-  font-style: bold;
+  font-weight: bold;
+  width: 100%;
 }
 
 .card__soundCloud {
@@ -153,12 +158,6 @@
   margin-bottom: 24px;
 }
 
-#comment {
-  width: 100%;
-  height: 96px;
-  margin-bottom: 24px;
-}
-
 .cta {
   color: white;
   background-color: #323232;
@@ -169,10 +168,21 @@
 }
 
 #comments {
-  width: 460px;
+  width: 528px;
+  padding-top: 24px;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.comments__name {
+  border-top: 2px solid black;
   padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.comments__text {
+  border-bottom: 2px solid black;
+  padding-bottom: 24px;
 }
 
 .tickets {
@@ -326,9 +336,9 @@
   #comments {
     width: 244px;
     margin: 0 auto;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     padding-top: 24px;
-    padding-left: 16px;
+    padding-left: 38px;
   }
   .comments__name {
     border-top: 2px solid black;
@@ -354,7 +364,7 @@
   }
 }
 
-@media (max-width: 717px) and (min-width: 482px) {
+@media (max-width: 768px) and (min-width: 482px) {
   .hero {
     height: 400px;
     background-size: cover;
@@ -368,32 +378,72 @@
     font-size: 2.5em;
     padding-top: 19%;
   }
-  .musician {
-    padding: 48px 0 48px 24px;
-  }
   .about {
-    padding-left: 24px;
-    width: 720px;
+    margin: 0 auto;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: wrap;
         flex-flow: wrap;
+    padding-left: 24px;
   }
   .about__img {
-    width: 100%;
+    width: 720px;
     height: 362px;
     padding-bottom: 48px;
   }
   .about__p1 {
     padding-bottom: 40px;
+    width: 100%;
+    font-weight: bold;
   }
   .about__p2 {
     padding-bottom: 56px;
+    width: 100%;
+    font-weight: bold;
   }
   .about h3 {
     padding-bottom: 32px;
-    font-style: bold;
+    font-weight: bold;
+    width: 100%;
+  }
+  .about__nujabes1, .about__nujabes2 {
+    width: 420px;
+    padding-bottom: 48px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 47%;
+            flex: 0 0 47%;
+  }
+  .about__nujabes1 {
+    margin-right: 24px;
+  }
+  .picture_title {
+    padding: 48px 0 64px 24px;
+  }
+  .container-galery {
+    padding-bottom: 40px;
+  }
+  .galery {
+    height: 627px;
+    width: 100%;
+    margin-left: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .galery__pic {
+    width: 224px;
+    height: 126px;
+    background-repeat: round;
+  }
+  .conversation__title {
+    padding-left: 24px;
+  }
+  .musician {
+    padding: 48px 0 48px 24px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
