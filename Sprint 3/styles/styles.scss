@@ -1,0 +1,409 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@mixin padding180 {
+    padding-left: 180px;
+}
+
+@mixin padding24 {
+    padding-left: 24px;
+}
+@mixin padding14 {
+    padding-left: 14px;
+}
+
+
+
+
+.hero {
+    height: 670px;
+    background-size: cover;
+    background-repeat: round;
+    img {
+        height: 670px;
+    }
+    &__cover {
+        @include padding180;
+        padding-top: 160px;
+        font-size: 3em;
+        color: white;
+    }
+}
+
+.about {
+    margin: 0 auto;
+    width: 896px;
+    display: flex;
+    flex-flow: wrap;
+    &__img {
+        width: 100%;
+        height: 450px;
+        padding-bottom: 48px;
+
+    }
+    &__p1 {
+       padding-bottom: 40px;
+       
+    }
+    &__p2 {
+        padding-bottom: 56px;
+        
+    }
+    h3 {
+        padding-bottom: 32px;
+        font-style: bold;
+        
+    }
+    
+}
+.card__soundCloud {
+    display: flex;
+    flex-flow: wrap;
+    @include padding180();
+    padding-top: 48px;
+
+    &__player {
+        padding-left: 64px;
+    }
+    &__title {
+        font-size: 3em;
+    }
+}
+
+.hero__cover__shows {
+    font-size: 1.5em;
+}
+.about__nujabes1, .about__nujabes2{
+    width: 420px;
+    padding-bottom: 48px;
+    flex: 0 0 47%;
+    
+}
+.about__nujabes1{
+    margin-right: 40px;
+}
+
+.musician {
+    padding: 48px 0 48px 180px;
+}
+
+.picture_title {
+    padding: 48px 0 64px 180px;
+}
+.container-galery{
+    padding-bottom: 40px;
+}
+.galery{
+    height:627px ;
+    width: 1080px;
+    margin-left: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    &__pic {
+        width: 344px;
+        height: 193px;
+        // background-image: url('nuajbes5.jpg');
+        background-repeat: round;
+        // margin: 8px;
+        &--middle {
+            margin: 0 24px;
+        }
+    }        
+}
+
+.conversation__title {
+    padding-left: 180px;
+    padding-top: 48px;
+    padding-bottom: 56px;
+   
+}
+
+.conversation {
+    display: flex;
+    justify-content: center;
+}
+.myform {
+    width: 460px;
+   
+    
+}
+.myform__img > img {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+
+}
+
+#username {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 24px;
+}
+
+#comment {
+    width: 100%;
+    height: 96px;
+    margin-bottom: 24px;
+}
+
+.cta {
+    color: white;
+    background-color: #323232;
+    width: 160px;
+    height: 48px;
+    border-radius: 4px;
+    float: right;
+}
+
+#comments {
+    width: 460px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-top: 24px;
+}
+.tickets {
+    display: flex;
+    flex-flow: wrap;
+    width: 804px;
+    &__d {
+        flex: 0 0 25%;
+    }
+};
+
+// --------------------------@media-query mobile and tablet-----------------------------
+@media  (max-width:481px){
+    .hero {
+        height: 183px;
+        background-size: cover;
+        background-repeat: round;
+        
+        img {
+            height: 100%;
+        }
+        &__cover {
+            padding-left: 16px;
+            padding-top: 12%;
+            font-size: 1.5em;
+    
+        }
+    }
+    .musician {
+        padding: 32px 0 14px 16px;
+    }
+    .about {
+        padding: 32px 16px 16px;
+        width: 288px;
+        display: flex;
+        flex-flow: wrap;
+        margin: 0;
+        &__img {
+            width: 100%;
+            height: 240px;
+            padding-bottom: 24px;
+    
+        }
+        &__p1 {
+           padding-bottom: 32px;
+           width: 288px;
+           font-weight: bold;
+           
+           
+        }
+        &__p2 {
+            padding-bottom: 40px;
+            width: 288px;
+            font-weight: bold;
+            
+            
+        }
+        h3 {
+            padding-bottom: 24px;
+            font-weight: bold;
+            width: 288px;
+            
+        }
+        
+    }
+    .about__nujabes1 {
+        margin-right: 0px;
+        width: 288px;
+        flex: 0 0 100%;
+    }
+    .about__nujabes2 {
+        
+        width: 288px;
+        flex: 0 0 100%;
+    }
+    .picture_title {
+        padding: 32px 0 24px 16px;
+    }
+    .container-galery{
+        padding-bottom: 40px;
+        flex-wrap: wrap;
+        padding-left: 16px;
+        height: 124em;
+    }
+
+    .galery{
+        height:627px ;
+        width: 481px;
+        margin-left: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        &__pic {
+            width: 288px;
+            height: 193px;
+            background-repeat: round;
+            margin-bottom: 16px;
+            
+            &--middle {
+                margin: 0 0px;
+                margin-bottom: 16px;
+            }
+        } 
+            
+    }
+
+    .conversation__title {
+        padding: 32px 0 40px 16px;
+       
+    }
+    
+    .conversation {
+        display: flex;
+        justify-content: center;
+        padding-left: 16px;
+    }
+    .myform {
+        width: 244px;
+       
+        
+    }
+    .myform__img > img {
+        width: 48px;
+        height: 48px;
+        display: inline-block;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        margin-right: 10px;
+        
+    
+    }
+    
+    #username {
+        width: 100%;
+        height: 48px;
+        margin-bottom: 24px;
+    }
+    
+    #comment {
+        width: 100%;
+        height: 96px;
+        margin-bottom: 24px;
+    }
+    
+    .cta {
+        color: white;
+        background-color: #323232;
+        width: 244px;
+        height: 48px;
+        border-radius: 4px;
+        float: right;
+        margin-bottom: 32px
+    }
+    
+    #comments {
+        width: 244px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+        padding-top: 24px;
+        padding-left: 16px;
+    }
+    
+    .comments__name {
+        border-top: 2px solid black;
+        padding-top: 24px;
+        padding-bottom: 16px;
+
+        }
+
+    .comments__text{
+            border-bottom: 2px solid black;
+            padding-bottom: 24px;
+        }
+    
+
+    
+    .tickets {
+        display: flex;
+        flex-flow: wrap;
+        width: 804px;
+        &__d {
+            flex: 0 0 25%;
+        }
+    };
+    
+ }
+ 
+  
+  @media  (max-width:717px) and (min-width: 482px)  {
+   
+    .hero {
+        height: 400px;
+        background-size: cover;
+        background-repeat: round;
+        
+        img {
+            height: 100%;
+        }
+        &__cover {
+            padding-left: 24px;
+            font-size: 2.5em;
+            padding-top: 19%;
+            
+        }
+    }
+    .musician {
+        padding: 48px 0 48px 24px;
+        
+    }
+    .about {
+        padding-left: 24px;
+        width: 720px;
+        display: flex;
+        flex-flow: wrap;
+        &__img {
+            width: 100%;
+            height: 362px;
+            padding-bottom: 48px;
+    
+        }
+        &__p1 {
+           padding-bottom: 40px;
+           
+        }
+        &__p2 {
+            padding-bottom: 56px;
+            
+        }
+        h3 {
+            padding-bottom: 32px;
+            font-style: bold;
+            
+        }
+        
+    }
+    
+ }
+    
+  

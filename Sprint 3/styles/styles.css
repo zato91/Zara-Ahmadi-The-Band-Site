@@ -1,0 +1,399 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero {
+  height: 670px;
+  background-size: cover;
+  background-repeat: round;
+}
+
+.hero img {
+  height: 670px;
+}
+
+.hero__cover {
+  padding-left: 180px;
+  padding-top: 160px;
+  font-size: 3em;
+  color: white;
+}
+
+.about {
+  margin: 0 auto;
+  width: 896px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.about__img {
+  width: 100%;
+  height: 450px;
+  padding-bottom: 48px;
+}
+
+.about__p1 {
+  padding-bottom: 40px;
+}
+
+.about__p2 {
+  padding-bottom: 56px;
+}
+
+.about h3 {
+  padding-bottom: 32px;
+  font-style: bold;
+}
+
+.card__soundCloud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  padding-left: 180px;
+  padding-top: 48px;
+}
+
+.card__soundCloud__player {
+  padding-left: 64px;
+}
+
+.card__soundCloud__title {
+  font-size: 3em;
+}
+
+.hero__cover__shows {
+  font-size: 1.5em;
+}
+
+.about__nujabes1, .about__nujabes2 {
+  width: 420px;
+  padding-bottom: 48px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 47%;
+          flex: 0 0 47%;
+}
+
+.about__nujabes1 {
+  margin-right: 40px;
+}
+
+.musician {
+  padding: 48px 0 48px 180px;
+}
+
+.picture_title {
+  padding: 48px 0 64px 180px;
+}
+
+.container-galery {
+  padding-bottom: 40px;
+}
+
+.galery {
+  height: 627px;
+  width: 1080px;
+  margin-left: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.galery__pic {
+  width: 344px;
+  height: 193px;
+  background-repeat: round;
+}
+
+.galery__pic--middle {
+  margin: 0 24px;
+}
+
+.conversation__title {
+  padding-left: 180px;
+  padding-top: 48px;
+  padding-bottom: 56px;
+}
+
+.conversation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.myform {
+  width: 460px;
+}
+
+.myform__img > img {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+
+#username {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+#comment {
+  width: 100%;
+  height: 96px;
+  margin-bottom: 24px;
+}
+
+.cta {
+  color: white;
+  background-color: #323232;
+  width: 160px;
+  height: 48px;
+  border-radius: 4px;
+  float: right;
+}
+
+#comments {
+  width: 460px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 24px;
+}
+
+.tickets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 804px;
+}
+
+.tickets__d {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+@media (max-width: 481px) {
+  .hero {
+    height: 183px;
+    background-size: cover;
+    background-repeat: round;
+  }
+  .hero img {
+    height: 100%;
+  }
+  .hero__cover {
+    padding-left: 16px;
+    padding-top: 12%;
+    font-size: 1.5em;
+  }
+  .musician {
+    padding: 32px 0 14px 16px;
+  }
+  .about {
+    padding: 32px 16px 16px;
+    width: 288px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    margin: 0;
+  }
+  .about__img {
+    width: 100%;
+    height: 240px;
+    padding-bottom: 24px;
+  }
+  .about__p1 {
+    padding-bottom: 32px;
+    width: 288px;
+    font-weight: bold;
+  }
+  .about__p2 {
+    padding-bottom: 40px;
+    width: 288px;
+    font-weight: bold;
+  }
+  .about h3 {
+    padding-bottom: 24px;
+    font-weight: bold;
+    width: 288px;
+  }
+  .about__nujabes1 {
+    margin-right: 0px;
+    width: 288px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .about__nujabes2 {
+    width: 288px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .picture_title {
+    padding: 32px 0 24px 16px;
+  }
+  .container-galery {
+    padding-bottom: 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 16px;
+    height: 124em;
+  }
+  .galery {
+    height: 627px;
+    width: 481px;
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .galery__pic {
+    width: 288px;
+    height: 193px;
+    background-repeat: round;
+    margin-bottom: 16px;
+  }
+  .galery__pic--middle {
+    margin: 0 0px;
+    margin-bottom: 16px;
+  }
+  .conversation__title {
+    padding: 32px 0 40px 16px;
+  }
+  .conversation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 16px;
+  }
+  .myform {
+    width: 244px;
+  }
+  .myform__img > img {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+  }
+  #username {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 24px;
+  }
+  #comment {
+    width: 100%;
+    height: 96px;
+    margin-bottom: 24px;
+  }
+  .cta {
+    color: white;
+    background-color: #323232;
+    width: 244px;
+    height: 48px;
+    border-radius: 4px;
+    float: right;
+    margin-bottom: 32px;
+  }
+  #comments {
+    width: 244px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    padding-top: 24px;
+    padding-left: 16px;
+  }
+  .comments__name {
+    border-top: 2px solid black;
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+  .comments__text {
+    border-bottom: 2px solid black;
+    padding-bottom: 24px;
+  }
+  .tickets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    width: 804px;
+  }
+  .tickets__d {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+}
+
+@media (max-width: 717px) and (min-width: 482px) {
+  .hero {
+    height: 400px;
+    background-size: cover;
+    background-repeat: round;
+  }
+  .hero img {
+    height: 100%;
+  }
+  .hero__cover {
+    padding-left: 24px;
+    font-size: 2.5em;
+    padding-top: 19%;
+  }
+  .musician {
+    padding: 48px 0 48px 24px;
+  }
+  .about {
+    padding-left: 24px;
+    width: 720px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .about__img {
+    width: 100%;
+    height: 362px;
+    padding-bottom: 48px;
+  }
+  .about__p1 {
+    padding-bottom: 40px;
+  }
+  .about__p2 {
+    padding-bottom: 56px;
+  }
+  .about h3 {
+    padding-bottom: 32px;
+    font-style: bold;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

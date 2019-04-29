@@ -38,7 +38,6 @@ displayComment();
 
 
 
-let myNewComment = {};
 
 document.querySelector('.myform').addEventListener("submit", e => {
     e.preventDefault();
@@ -53,7 +52,7 @@ document.querySelector('.myform').addEventListener("submit", e => {
 
     today = mm + '/' + dd + '/' + yyyy;
 
-document.getElementById('Comments').innerHTML = "";
+ document.getElementById('Comments').innerHTML = "";
  myComment.unshift({username:userN,date:today,comment:userC});
  
  displayComment();
